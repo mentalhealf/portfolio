@@ -557,6 +557,27 @@ img {
 .html__container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
+  margin-top: 20px;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.tel {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: start; */
+  text-align: left;
+  color: white;
+}
 
+.email {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: end; */
+  text-align: right;
+  color: white;
+}
