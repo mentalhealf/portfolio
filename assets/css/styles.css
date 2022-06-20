@@ -602,9 +602,6 @@ img {
   text-align: center;
 }
 
-.work__small {
-  /* height: 180px; */
-}
 
 .html__container {
   grid-template-columns: repeat(2, 1fr);
