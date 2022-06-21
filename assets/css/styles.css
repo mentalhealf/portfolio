@@ -51,12 +51,12 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  cursor: url(/assets/img/mouse-pointer-min-first.png), url(images/cursor-2.cur), default;
+  cursor: url(/assets/img/cursor.png), default;
   
 }
 
 a { 
-  cursor: url(/assets/img/mouse-pointer-min-second.png), pointer; 
+  cursor: url(/assets/img/cursor-pointer.png), pointer; 
 }
 
 h1,
@@ -399,6 +399,7 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  /* padding-top: 0px; */
 }
 
 .work__img {
@@ -602,7 +603,6 @@ img {
   text-align: center;
 }
 
-
 .html__container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
@@ -617,20 +617,109 @@ img {
 }
 .tel {
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: start; */
   text-align: left;
   color: white;
 }
 
 .email {
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: end; */
   text-align: right;
   color: white;
 }
 
-/* HOVER LINK */
+/* CUBE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+.cube {
+  position: relative;
+  width: 400px;
+  height: 220px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 50s linear infinite;
+  margin: 0 auto;
+  margin-top: 170px;
+}
+
+.sertific {
+  margin-top: 10vh;
+}
+
+.projec {
+  margin-top: -5vh;
+margin-bottom: 15vh;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotateX(-30deg) rotateY(0deg);
+  }
+
+  100% {
+      transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
 
 
+.cube div span h2 {
+  position: absolute;
+  font-size: 3em;
+  color: rgb(245, 248, 250);
+  text-shadow: black 0px 0px 20px;
+  transform: translateZ(50px);
+}
+
+.center-title {
+
+  
+}
+
+
+.cube div span h2:hover {
+  text-shadow: 5px 0 0 rgb(62 111 244);
+}
+
+/* .cube div span h2:nth-child(1) {
+  transform: translateZ(0) translateY(20px);
+  color: rgba(0, 0, 0, 0.1);
+  filter: blur(2px);
+} */
+
+.top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /* background: white; */
+  transform: rotateX(90deg) translateZ(95px);
+}
