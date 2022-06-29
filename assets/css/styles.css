@@ -47,17 +47,17 @@ html {
 }
 
 body {
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), default;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  cursor: url(/assets/img/cursor.png), default;
   
 }
 
 
 a { 
-  cursor: url(/assets/img/cursor-pointer.png), pointer; 
+  cursor: url(../img/cursor-pointer.png), url(../img/cursor-pointer.cur), pointer; 
 }
 
 h1,
