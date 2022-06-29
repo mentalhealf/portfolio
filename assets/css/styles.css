@@ -582,7 +582,7 @@ img {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
@@ -595,8 +595,48 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .center {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .center {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .center {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .center {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .center {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .center {
+    width: 60%;
+  }
+}
+
 .center {
-  width: 70%;
+  /* width: 40%; */
   margin: 0 auto;
 }
 
