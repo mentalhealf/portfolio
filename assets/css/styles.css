@@ -741,7 +741,7 @@ margin-bottom: 15vh;
 .wallpaper {
   width: 400px;
   height: 400px;
-  background: repeating-linear-gradient(to right, #5B86E5, #36D1DC);
+  /* background: repeating-linear-gradient(to right, #5B86E5, #36D1DC); */
   transform: rotateX(90deg) translateZ(110px) scale(1.0)scaleY(1.8);
 }
 
